@@ -85,6 +85,92 @@
                 </div>
             </div>
         </div>
+
+
+ <!-- About Start -->
+ <div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+           </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                       
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            Math challenges aim to foster critical thinking, problem-solving, and creativity in students. They encourage students to apply mathematical concepts to real-world scenarios.s Evaluate students’ knowledge, comprehension, and application of math concepts. Create a competitive yet supportive 
+                            environment that motivates students to excel in Mathematics. Reinforce learning and enhance retention of key mathematical ideas.
+                            Provide immediate feedback to students, helping them identify areas for improvement.
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+ <!-- Event Start -->
+ <div class="event">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Upcoming Events</p>
+            <h2>Be ready for our upcoming Mathematics Challenges</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="event-item">
+                    <img src="img/event-1.jpg" alt="Image">
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                            <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                            <p><i class="fa fa-map-marker-alt"></i>Kenya</p>
+                        </div>
+                        <div class="event-text">
+                            <h3>3rd Edition of Math Challenge</h3>
+                            <p>
+                                This Challenge will take place in Nairobi for all Primary Schools
+                            </p>
+                            <a class="btn btn-custom" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="event-item">
+                    <img src="img/event-2.jpg" alt="Image">
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                            <p><i class="far fa-clock"></i>8:00 - 10:00</p>
+                            <p><i class="fa fa-map-marker-alt"></i>Tanzania</p>
+                        </div>
+                        <div class="event-text">
+                            <h3>4th Edition of Math Challenge </h3>
+                            <p>
+                                This Challenge will take place in Dodoma for all Primary Schools
+                            </p>
+                            <a class="btn btn-custom" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Event End -->
+
+
       <!-- Footer Start -->
         <div class="footer">
             <div class="container">
