@@ -1,0 +1,23 @@
+php artisan make:migration create_challenges_table
+php artisan make:migration create_questions_table
+php artisan make:migration create_answers_table
+php artisan make:migration create_attempts_table
+php artisan make:migration create_results_table
+
+php artisan make:model Challenge
+php artisan make:model Answer
+php artisan make:model Question
+php artisan make:model Attempt
+php artisan make:model Result
+
+CREATE TABLE Schools (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    school_name VARCHAR(255) NOT NULL,
+    district VARCHAR(255) NOT NULL,
+    registration_number VARCHAR(100) NOT NULL UNIQUE,
+    representative_name VARCHAR(255) NOT NULL,
+    representative_email VARCHAR(255) NOT NULL
+);
+
+php artisan make:import QuestionsImport --model=Question
+php artisan make:import AnswersImpor --model=Answer

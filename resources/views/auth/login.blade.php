@@ -1,3 +1,14 @@
+ <!-- Home Page -->
+ <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+       <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{{URL('')}}" class="nav-item nav-link active">Home</a>
+            </div>
+        </div>
+       
+    </div>
+</div>
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
