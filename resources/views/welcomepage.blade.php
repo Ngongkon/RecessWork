@@ -33,6 +33,7 @@
                 @auth
                 <h1 class="nav-item nav-link">Dashboard</h1>
                 @else
+                <h1 class="nav-item nav-link">MATH CHALLENGE</h1>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="{{URL('')}}" class="nav-item nav-link active">Home</a>
@@ -60,28 +61,12 @@
                             <img src="img/carousel-1.jpg" alt="Image">
                         </div>
                         <div class="carousel-text">
-                            <h1>Let's be kind for children</h1>
-                            <p> nothing important than a child</p>
+                            <h1>Mathematics Challenge</h1>
+                            <p>  This online Challenge intends to make Mathematics more realistic 
+                                and practical in our day to day lives and online</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/carousel-2.jpg" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Get Involved with helping hand</h1>
-                            <p>it is great to help </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/carousel-3.jpg" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Bringing smiles to millions</h1>
-                            <p>To be added </p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -169,6 +154,62 @@
     </div>
 </div>
 <!-- Event End -->
+
+ <!-- Blog Start -->
+ <div class="blog">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Best Performers 2022</p>
+            <h2>These are the best pupils in our previous challenge</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/blog-1.jpg" alt="Image">
+                    </div>
+                    <div class="blog-text">
+                        <h3><a href="#">Katumba Joshua</a></h3>
+                        <p>
+                            A pupil from Blessed Sacrament Kimanya Primary School in Masaka.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/pupil.jpg" alt="Image">
+                    </div>
+                    <div class="blog-text">
+                        <h3><a href="#">Nasazzi Grace Dift</a></h3>
+                        <p>
+                            A pupil form St.Peter's Matete Primary School in Ssembabule
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/blog-3.jpg" alt="Image">
+                    </div>
+                    <div class="blog-text">
+                        <h3><a href="#">Kigundu Alex</a></h3>
+                        <p>
+                            A pupil form Mpigi UMEA Primary School in Mpigi
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
 
 
       <!-- Footer Start -->
