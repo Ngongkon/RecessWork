@@ -39,7 +39,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <p>Meet Our Team</p>
-                    <h2>Awesome guys behind our charity activities</h2>
+                    <h2>Awesome guys behind our Mathematics Challenge </h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -48,7 +48,7 @@
                                 <img src="img/team-1.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
-                                <h2>Donald John</h2>
+                                <h2>Kabanda Arthur</h2>
                                 <p>Founder & CEO</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -65,7 +65,7 @@
                                 <img src="img/team-2.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
-                                <h2>Adam Phillips</h2>
+                                <h2>Ngong Abraham</h2>
                                 <p>Chef Executive</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -82,7 +82,7 @@
                                 <img src="img/team-3.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
-                                <h2>Thomas Olsen</h2>
+                                <h2>Kakooza Micheal</h2>
                                 <p>Chef Advisor</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -99,7 +99,7 @@
                                 <img src="img/team-4.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
-                                <h2>James Alien</h2>
+                                <h2>Buyinza Samuel</h2>
                                 <p>Advisor</p>
                                 <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -107,7 +107,24 @@
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                 </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Team Image">
                             </div>
+                            <div class="team-text">
+                                <h2>Kanyesigye William</h2>
+                                <p>Chief Director</p>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>
