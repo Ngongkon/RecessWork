@@ -26,6 +26,7 @@ class AnswersImpor implements ToModel,WithHeadingRow
             //
             'question_id' => $row['question_id'], 
             'answer_text' =>$row['answers'],
+            'marks'=>$row['marks']
             
             
         ]);

@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Answer;
+use App\Models\Participant;
+use App\Models\Question;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,16 +16,10 @@ return new class extends Migration
     {
         Schema::create('results', function (Blueprint $table) {
             $table->id();
-            $table->text('given_answer');
-            $table->unsignedBigInteger('attempt_id');
-            $table->unsignedBigInteger('question_id');
+            $table->foreignIdFor(Participant::class)->constrained()->cascadeOnUpdate();
+            $table->foreignIdFor(Question::class)->constrained()->cascadeOnUpdate();
+            $table->foreignIdFor(Answer::class)->constrained()->cascadeOnUpdate();
             $table->integer('marks_obtained');
-            $table->integer('time_taken');
-            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
-            $table->foreign('attempt_id')->references('id')->on('attempts')->onDelete('cascade');
-          
-          
-        
             $table->timestamps();
         });
     }

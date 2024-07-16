@@ -35,11 +35,6 @@ route::post('uploadingAnswers',[AdminController::class,'uploadAnswers'])->middle
 route::post('uploadingQuestions',[AdminController::class,'uploadQuestions'])->middleware(['auth','admin']);
 route::get('allQuestions',[AdminController::class,'all_questions'])->middleware(['auth','admin']);
 route::get('allAnswers',[AdminController::class,'all_answers'])->middleware(['auth','admin']);
-route::get('challenges', [ChallengeController::class, 'showSetParametersForm']);
-route::post('parameters', [ChallengeController::class, 'setParameters']);
-route::get('/challenges/{id}', [AttemptController::class, 'start'])
-    ->middleware(['auth', 'check.challenge.date'])
-    ->name('challenges.start');
-route::post('submittingAttempt', [AttemptController::class, 'submitAttempt']);
-route::get('allAttempts', [AttemptController::class, 'all_attempts'])->middleware(['auth','admin']);
-route::get('allResults', [AttemptController::class, 'all_results'])->middleware(['auth','admin']);
+route::post('Challenge', [ChallengeController::class, 'storeChallenge']);
+route::get('challenges', [ChallengeController::class, 'index'])->name('challenges');
+

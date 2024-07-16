@@ -21,3 +21,7 @@ CREATE TABLE Schools (
 
 php artisan make:import QuestionsImport --model=Question
 php artisan make:import AnswersImpor --model=Answer
+php artisan make:notification NewNotification
+php artisan vendor:publish --tag=laravel-notifications
+php artisan make:request RegisterUserRequest
+

@@ -1,5 +1,5 @@
 <?php
-
+use App\Models\Challenge;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,12 +14,11 @@ return new class extends Migration
         Schema::create('attempts', function (Blueprint $table) {
             $table->id();
             $table->string('username');
-            $table->integer('score');
+            $table->integer('score')->default(0);
             $table->string('school_registration_number');
-            $table->integer('challengeName');
+            $table->foreignIdFor(Challenge::class)->constrained()->cascadeOnUpdate();
             $table->foreign('school_registration_number')->references('school_registration_number')->on('schools')->onDelete('cascade');
             $table->foreign('username')->references('username')->on('participants')->onDelete('cascade');
-            $table->foreign('challengeName')->references('challengeName')->on('challenges')->onDelete('cascade');
             $table->timestamps();
             
            

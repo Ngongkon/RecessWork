@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('challenges', function (Blueprint $table) {
             $table->id();
-            $table->integer('challengeName')->unique();
-            $table->string('title',255);
+            $table->string('challenge_name');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->integer('duration');

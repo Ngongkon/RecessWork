@@ -24,8 +24,7 @@ class QuestionsImport implements ToModel,WithHeadingRow
         return new Question([
             //
             'question_text' =>$row['question'],
-            'challengeName' => $row['challengeName'],
-            'marks' =>$row['marks']
+            
 
         ]);
     }
