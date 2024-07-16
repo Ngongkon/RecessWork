@@ -33,7 +33,7 @@
                 @auth
                 <h1 class="nav-item nav-link">Dashboard</h1>
                 @else
-                <h1 class="nav-item nav-link">MATH CHALLENGE</h1>
+                <h1 style="color: antiquewhite">MATH CHALLENGE</h1>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="{{URL('')}}" class="nav-item nav-link active">Home</a>
@@ -58,7 +58,7 @@
                 <div class="owl-carousel">
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/carousel-1.jpg" alt="Image">
+                            <img src="img/child.jpg" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h1>Mathematics Challenge</h1>
