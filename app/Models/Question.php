@@ -12,7 +12,7 @@ class Question extends Model
     protected $table = 'questions';
     protected $fillable = [
         'question_text',
-        'challenge_name',
+        //'challenge_name',
     ];
     protected $guarded = ['created_at', 'updated_at'];
 

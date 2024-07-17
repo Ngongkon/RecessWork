@@ -24,7 +24,7 @@
         <link href="css/style1.css" rel="stylesheet">
     </head>
           <!-- Home Page -->
-        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        {{-- <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
@@ -32,6 +32,15 @@
                     </div>
                 </div>
                
+            </div>
+        </div> --}}
+        <div class="navbar navbar-expand-lg" style="background-color: #343a40; padding: 10px 20px; border-radius: 0;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="{{URL('')}}" class="nav-item nav-link active" style="color: #ffffff; padding: 0 10px;">Home</a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Team Start -->
