@@ -208,9 +208,11 @@ public class DbConnection {
     }
 
     public ResultSet getRepresentative(String regNo) throws SQLException {
-        String sqlCommand = "SELECT * FROM `schools` WHERE school_registration_number = " + regNo + ";";
-        return this.statement.executeQuery(sqlCommand);
-    }
+        String sqlCommand = "SELECT * FROM schools WHERE school_registration_number = ?";
+        PreparedStatement preparedStatement = this.connection.prepareStatement(sqlCommand);
+        preparedStatement.setString(1, regNo);
+        return preparedStatement.executeQuery();
+}
 
     public ResultSet getSchool(String regNo) throws SQLException {
         String sqlCommand = "SELECT school_name FROM `schools` WHERE school_registration_number = " + regNo + ";";

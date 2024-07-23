@@ -16,5 +16,14 @@
         "email": "nanfuka@gmail.com",
         "username": "nagannet",
         "lastname": "annet"
+    },
+    {
+        "firstname": "mande",
+        "date_of_birth": "2003-08-04",
+        "school_registration_number": "2309/U/444",
+        "image_file": "image.png",
+        "email": "made@gmail.com",
+        "username": "moon",
+        "lastname": "james"
     }
 ]
