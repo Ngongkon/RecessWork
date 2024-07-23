@@ -117,10 +117,12 @@ public class DbConnection {
                 continue;
             }
 
+
             String userAnswer = obj.optString("answer_text", "");
             int questionId = obj.getInt("question_id");
             long questionTimeTaken = obj.getLong("time_taken");
 
+            //sql query to selct correct answers from the database
             String sql = "SELECT `answer_text`, `marks` FROM `answers` WHERE `question_id` = ?";
             try (PreparedStatement pstmt = this.connection.prepareStatement(sql)) {
                 pstmt.setInt(1, questionId);
