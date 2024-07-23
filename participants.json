@@ -1,0 +1,20 @@
+[
+    {
+        "firstname": "nanfuka",
+        "date_of_birth": "2002-04-12",
+        "school_registration_number": "402",
+        "image_file": "image.png",
+        "email": "nanfukaannet308@gmail.com",
+        "username": "naka",
+        "lastname": "annet"
+    },
+    {
+        "firstname": "nagayi",
+        "date_of_birth": "2002-04-12",
+        "school_registration_number": "402",
+        "image_file": "image.png",
+        "email": "nanfuka@gmail.com",
+        "username": "nagannet",
+        "lastname": "annet"
+    }
+]
