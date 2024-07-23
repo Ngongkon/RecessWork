@@ -38,3 +38,6 @@ route::get('allAnswers',[AdminController::class,'all_answers'])->middleware(['au
 route::post('Challenge', [ChallengeController::class, 'storeChallenge']);
 route::get('challenges', [ChallengeController::class, 'index'])->name('challenges');
 
+Route::get('send-emails', [ChallengeController::class, 'showSendEmailsForm'])->name('sendEmailsForm');
+Route::post('sendingEmails', [ChallengeController::class, 'sendEmailsToParticipants']);
+

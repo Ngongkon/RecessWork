@@ -24,4 +24,6 @@ php artisan make:import AnswersImpor --model=Answer
 php artisan make:notification NewNotification
 php artisan vendor:publish --tag=laravel-notifications
 php artisan make:request RegisterUserRequest
+php artisan make:mail ParticipantReportMail
 
+ $table->boolean('is_active')->default(true); to be used in Challenge table

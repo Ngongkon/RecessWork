@@ -12,7 +12,7 @@
         <!-- partial -->
         <div class="container" style="color:black; padding-top:50px" align="center" >
             <div align="center" style="padding-top:100px;">
-        <h1>Number of Schools Registered</h1>
+        <h1 > Number of Schools Registered</h1>
           <table>
             <tr style="background-color:black;">
             <th style="padding:10px; color:white;">ID</th>
@@ -24,7 +24,7 @@
         
         </tr>
         @foreach ($schools as $schools)
-        <tr style="background-color:skyblue;" align="center">
+        <tr style="background-color:skyblue;" align="right">
             <td>{{ $schools->id }}</td>
             <td>{{ $schools->school_name }}</td>
             <td>{{ $schools->district }}</td>

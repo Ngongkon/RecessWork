@@ -35,7 +35,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-line fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Today's Participants</p>
+                                <p class="mb-2">Challenges</p>
                                 <h6 class="mb-0">{{ number_format($todayParticipant) }}</h6>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-bar fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Today's Schools</p>
+                                <p class="mb-2">Questions</p>
                                 <h6 class="mb-0">{{ number_format($todaySchool) }}</h6>
                             </div>
                         </div>
@@ -71,20 +71,20 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-pie fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Yesterday's Schools</p>
+                                <p class="mb-2">Answers</p>
                                 <h6 class="mb-0">{{ number_format($yesterdaySchool) }}</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xl-3">
+                    {{-- <div class="col-sm-6 col-xl-3">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-pie fa-3x text-primary"></i> --}}
-                            <div class="ms-3">
+                            {{-- <div class="ms-3">
                                 <p class="mb-2">Yesterday's Participants</p>
                                 <h6 class="mb-0">{{ number_format($yesterdayParticipant) }}</h6>
                             </div>
                         </div>
-                    </div>
+                    </div>  --}}
                 </div>
             </div>
             <!-- Sale & Revenue End -->
