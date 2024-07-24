@@ -21,7 +21,6 @@
             <a href="{{ url('challenges') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Challenges</a>
             <a href="{{url('allQuestions')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Add Questions</a>
             <a href="{{url('allAnswers')}}"class="nav-item nav-link"><i class="fa fa-th me-2"></i>Add Answers</a>
-            <a href=""class="nav-item nav-link"><i class="fa fa-th me-2"></i>Attempts</a>
             <a href="{{route('sendEmailsForm')}}"class="nav-item nav-link"><i class="fa fa-th me-2"></i>Send Results</a>
             {{-- <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a> --}}
             <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>

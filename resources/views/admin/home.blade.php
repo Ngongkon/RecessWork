@@ -76,15 +76,15 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-sm-6 col-xl-3">
-                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                    
+                    <div class="col-sm-6 col-xl-3">
+                        {{-- <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4"> --}}
                             {{-- <i class="fa fa-chart-pie fa-3x text-primary"></i> --}}
-                            {{-- <div class="ms-3">
-                                <p class="mb-2">Yesterday's Participants</p>
-                                <h6 class="mb-0">{{ number_format($yesterdayParticipant) }}</h6>
+                             <div class="ms-3">
+                               @include('admin.statistics')
                             </div>
-                        </div>
-                    </div>  --}}
+                        {{-- </div> --}}
+                    </div> 
                 </div>
             </div>
             <!-- Sale & Revenue End -->

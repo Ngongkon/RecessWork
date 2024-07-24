@@ -10,9 +10,9 @@
       <!-- partial -->
       @include('admin.navbar')
         <!-- partial -->
-        <div class="container" style="color:black; padding-top:50px" align="center" >
-            <div align="center" style="padding-top:100px;">
-        <h1>Registered Participants</h1>
+        <div class="container" style="color:black; padding-top:50px; margin-left:200px; align=center" >
+            <div  class="container" style="padding-top:100px;align=center">
+        <h1 style="margin-left:150px;">Registered Participants</h1>
           <table>
             <tr style="background-color:black;">
             <th style="padding:10px; color:white;">ID</th>
@@ -25,7 +25,7 @@
             <th style="padding:10px; color:white;">Image File</th>
         </tr>
         @foreach ($participants as $participants)
-        <tr style="background-color:skyblue;" align="center">
+        <tr style="background-color:skyblue;margin-left:200px; align= center">
             <td>{{ $participants->id }}</td>
             <td>{{ $participants->username }}</td>
             <td>{{ $participants->firstname }}</td>

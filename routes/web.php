@@ -5,7 +5,9 @@ use App\Http\Controllers\AttemptController;
 use App\Http\Controllers\ChallengeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StatisticsController;
 use Illuminate\Support\Facades\Route;
+
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -40,4 +42,6 @@ route::get('challenges', [ChallengeController::class, 'index'])->name('challenge
 
 Route::get('send-emails', [ChallengeController::class, 'showSendEmailsForm'])->name('sendEmailsForm');
 Route::post('sendingEmails', [ChallengeController::class, 'sendEmailsToParticipants']);
+Route::get('/statistics', [StatisticsController::class, 'showStatistics'])->name('statistics');
+
 
