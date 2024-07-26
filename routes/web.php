@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AttemptController;
+use App\Http\Controllers\ParticipantChallengeController;
 use App\Http\Controllers\ChallengeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -47,3 +47,6 @@ Route::get('/pie', [StatisticsController::class, 'statistics'])->name('pie');
 
 
 
+Route::get('/challenges', [ParticipantChallengeController::class, 'index'])->name('participant-challenges');
+
+Route::get('/attempts', [App\Http\Controllers\AttemptController::class, 'index']);
