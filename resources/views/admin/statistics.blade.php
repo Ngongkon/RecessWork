@@ -7,12 +7,12 @@
 
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Work',     11],
-                ['Eat',      2],
-                ['Commute',  2],
-                ['Watch TV', 2],
-                ['Sleep',    7]
+                ['School Name', 'Participant ount'],
+                ['Best School',     11],
+                ['Average School',      6],
+                ['Worst School',  2],
+                // ['Watcchh TV', 2],
+                // ['Sleep',    7]
             ]);
 
             var options = {

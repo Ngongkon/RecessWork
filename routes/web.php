@@ -43,5 +43,7 @@ route::get('challenges', [ChallengeController::class, 'index'])->name('challenge
 Route::get('send-emails', [ChallengeController::class, 'showSendEmailsForm'])->name('sendEmailsForm');
 Route::post('sendingEmails', [ChallengeController::class, 'sendEmailsToParticipants']);
 Route::get('/statistics', [StatisticsController::class, 'showStatistics'])->name('statistics');
+Route::get('/pie', [StatisticsController::class, 'statistics'])->name('pie');
+
 
 
