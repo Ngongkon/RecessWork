@@ -1,0 +1,13 @@
+org\example\client\Client.class
+org\example\client\Serializer.class
+org\example\client\ClientController.class
+org\example\server\Email.class
+org\example\client\Randomizer.class
+org\example\client\ClientInstance.class
+org\example\server\ServerThread.class
+org\example\server\DbConnection.class
+org\example\client\User.class
+org\example\server\Controller.class
+org\example\server\Server.class
+org\example\server\LocalStorage.class
+org\example\server\Email$1.class
