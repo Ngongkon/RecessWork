@@ -23,7 +23,7 @@ class QuestionsImport implements ToModel,WithHeadingRow
         //$challenge = $this->challenges->where('title', $row['challenge_title'])->first();
         return new Question([
             //
-            'question_text' =>$row['question'],
+            'question_text'=>$row['question'],
             
 
         ]);

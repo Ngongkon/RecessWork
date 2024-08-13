@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Answer;
+use App\Models\Challenge;
 use App\Models\Participant;
+use App\Models\Question;
 use App\Models\School;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -13,18 +16,22 @@ class HomeController extends Controller
         // Get yesterday's date
         $yesterday = Carbon::yesterday()->toDateString();
 
-        // Fetch yesterday's data from the database
-        $yesterdaySchool = School::whereDate('created_at', $yesterday)->sum('school_name');
-        $yesterdayParticipant = Participant::whereDate('created_at', $yesterday)->sum('username');
+        // Get today's date
+        $today = Carbon::today()->toDateString();
 
-        $todaySchool= School::whereDate('created_at', now()->format('Y-m-d'))->sum('school_name');
-        $totalSchool = School::sum('school_name');
-        $todayParticipant = Participant::whereDate('created_at', now()->format('Y-m-d'))->sum('username');
-        $totalParticipant = Participant::sum('username');
+
+        // Fetch yesterday's data from the database
+        $yesterdaySchool = Answer::count();
+       // $yesterdayParticipant = School::whereDate('created_at', $yesterday)->count();
+
+        $todaySchool= Question::count();
+        $totalSchool = School::count();
+        $todayParticipant = Challenge::count();
+        $totalParticipant = Participant::count();
 
         return view('admin.home', [
             'yesterdaySchool' => $yesterdaySchool,
-            'yesterdayParticipant' => $yesterdayParticipant,
+           // 'yesterdayParticipant' => $yesterdayParticipant,
             'todaySchool' => $todaySchool,
             'totalSchool' => $totalSchool,
             'todayParticipant' => $todayParticipant,

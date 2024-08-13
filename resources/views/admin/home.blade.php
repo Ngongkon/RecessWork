@@ -35,7 +35,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-line fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Today's Participants</p>
+                                <p class="mb-2">Challenges</p>
                                 <h6 class="mb-0">{{ number_format($todayParticipant) }}</h6>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-bar fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Today's Schools</p>
+                                <p class="mb-2">Questions</p>
                                 <h6 class="mb-0">{{ number_format($todaySchool) }}</h6>
                             </div>
                         </div>
@@ -71,8 +71,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-pie fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Yesterday's Schools</p>
-                                <h6 class="mb-0">{{ number_format($yesterdaySchool) }}</h6>
+                                <p class="mb-2">Best Schools</p>
+                                <h6 class="mb-0">{{ number_format($totalParticipant) }}</h6>
                             </div>
                         </div>
                     </div>
@@ -80,8 +80,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             {{-- <i class="fa fa-chart-pie fa-3x text-primary"></i> --}}
                             <div class="ms-3">
-                                <p class="mb-2">Yesterday's Participants</p>
-                                <h6 class="mb-0">{{ number_format($yesterdayParticipant) }}</h6>
+                                <p class="mb-2">Answers</p>
+                                <h6 class="mb-0">{{ number_format($yesterdaySchool) }}</h6>
                             </div>
                         </div>
                     </div>
@@ -89,30 +89,9 @@
             </div>
             <!-- Sale & Revenue End -->
 
-
+         
             <!-- Sales Chart Start -->
-            {{-- <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Worldwide Sales</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="worldwide-sales"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="salse-revenue"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
+            {{-- @include('graph.pie') --}}
             <!-- Sales Chart End -->
 
 
@@ -128,7 +107,7 @@
                             <thead>
                                 <tr class="text-white">
                                     <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
+                                    <th scope="col">Da</th>
                                     <th scope="col">Invoice</th>
                                     <th scope="col">Customer</th>
                                     <th scope="col">Amount</th>
@@ -188,7 +167,7 @@
                 </div>
             </div> --}}
             <!-- Recent Sales End -->
-
+           @include('admin.statistics')
 
             <!-- Widgets Start -->
            @include('admin.widget') 
@@ -208,7 +187,7 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-   @include('admin.script')
+@include('admin.script')
 </body>
 
 </html>

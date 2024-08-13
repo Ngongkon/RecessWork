@@ -10,10 +10,10 @@
       <!-- partial -->
       @include('admin.navbar')
         <!-- partial -->
-        <div class="container" style="color:black; padding-top:50px" align="center" >
-            <div align="center" style="padding-top:100px;">
-        <h1>Number of Schools Registered</h1>
-          <table>
+        <div class="container" style="color:black; padding-top:50px; margin-left:150px; align= center" >
+            <div class="container" style="padding-top:100px; margin-left:110px; align=center">
+        <h1 > Number of Schools Registered</h1><br>
+          <table colspan ="5">
             <tr style="background-color:black;">
             <th style="padding:10px; color:white;">ID</th>
             <th style="padding:10px; color:white;">School Name</th>
@@ -24,7 +24,7 @@
         
         </tr>
         @foreach ($schools as $schools)
-        <tr style="background-color:skyblue;" align="center">
+        <tr style="background-color:skyblue; align= right">
             <td>{{ $schools->id }}</td>
             <td>{{ $schools->school_name }}</td>
             <td>{{ $schools->district }}</td>

@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AttemptController;
+use App\Http\Controllers\ParticipantChallengeController;
 use App\Http\Controllers\ChallengeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StatisticsController;
 use Illuminate\Support\Facades\Route;
+
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -38,3 +40,13 @@ route::get('allAnswers',[AdminController::class,'all_answers'])->middleware(['au
 route::post('Challenge', [ChallengeController::class, 'storeChallenge']);
 route::get('challenges', [ChallengeController::class, 'index'])->name('challenges');
 
+Route::get('send-emails', [ChallengeController::class, 'showSendEmailsForm'])->name('sendEmailsForm');
+Route::post('sendingEmails', [ChallengeController::class, 'sendEmailsToParticipants']);
+Route::get('/statistics', [StatisticsController::class, 'showStatistics'])->name('statistics');
+Route::get('/pie', [StatisticsController::class, 'statistics'])->name('pie');
+
+
+
+Route::get('/challenges', [ParticipantChallengeController::class, 'index'])->name('participant-challenges');
+
+Route::get('/attempts', [App\Http\Controllers\AttemptController::class, 'index']);
